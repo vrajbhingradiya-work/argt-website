@@ -7,7 +7,20 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    colors: {
+      transparent: "transparent",
+      current: "currentColor",
+      white: "#ffffff",
+      black: "#000000",
+      "dark-blue": "#0B1B2B",
+      "bright-red": "#D62536",
+      gray: "#848D94",
+    },
     extend: {
+      fontFamily: {
+        "chiquita-normal": ["Chiquita Normal", "sans-serif"],
+        "chiquita-outlined": ["Chiquita Outlined Regular", "sans-serif"],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
