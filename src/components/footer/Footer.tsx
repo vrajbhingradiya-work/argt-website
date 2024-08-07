@@ -109,100 +109,7 @@ function FooterLinks() {
             </ul>
           </div>
           {/*End Col*/}
-          <div className="lg:mx-auto text-left ">
-            <h4 className="text-lg text-gray-900 font-medium mb-7">Products</h4>
-            <ul className="text-sm  transition-all duration-500">
-              <li className="mb-6">
-                <a
-                  href="javascript:;"
-                  className="text-gray-600 hover:text-gray-900"
-                >
-                  Figma UI System
-                </a>
-              </li>
-              <li className="mb-6">
-                <a
-                  href="javascript:;"
-                  className=" text-gray-600 hover:text-gray-900"
-                >
-                  Icons Assets
-                </a>
-              </li>
-              <li className="mb-6">
-                <a
-                  href="javascript:;"
-                  className=" text-gray-600 hover:text-gray-900"
-                >
-                  Responsive Blocks
-                </a>
-              </li>
-              <li className="mb-6">
-                <a
-                  href="javascript:;"
-                  className=" text-gray-600 hover:text-gray-900"
-                >
-                  Components Library
-                </a>
-              </li>
-              <li className="mb-6">
-                <a
-                  href="javascript:;"
-                  className=" text-gray-600 hover:text-gray-900"
-                >
-                  Plugin Guide
-                </a>
-              </li>
-            </ul>
-          </div>
-          {/*End Col*/}
-          <div className="lg:mx-auto text-left ">
-            <h4 className="text-lg text-gray-900 font-medium mb-7">
-              Resources
-            </h4>
-            <ul className="text-sm  transition-all duration-500">
-              <li className="mb-6">
-                <a
-                  href="javascript:;"
-                  className="text-gray-600 whitespace-nowrap hover:text-gray-900"
-                >
-                  FAQs
-                </a>
-              </li>
-              <li className="mb-6">
-                <a
-                  href="javascript:;"
-                  className=" text-gray-600 whitespace-nowrap hover:text-gray-900"
-                >
-                  Quick Start
-                </a>
-              </li>
-              <li className="mb-6">
-                <a
-                  href="javascript:;"
-                  className=" text-gray-600 whitespace-nowrap hover:text-gray-900"
-                >
-                  Documentation
-                </a>
-              </li>
-              <li className="mb-6">
-                <a
-                  href="javascript:;"
-                  className=" text-gray-600 whitespace-nowrap hover:text-gray-900"
-                >
-                  User Guide
-                </a>
-              </li>
-              <li className="mb-6">
-                <a
-                  href="javascript:;"
-                  className=" text-gray-600 whitespace-nowrap hover:text-gray-900"
-                >
-                  Plugin Guide
-                </a>
-              </li>
-            </ul>
-          </div>
-          {/*End Col*/}
+          {/*End Col*/}={/*End Col*/}
           <div className="lg:mx-auto text-left ">
             <h4 className="text-lg text-gray-900 font-medium mb-7">Support</h4>
             <ul className="text-sm  transition-all duration-500">
@@ -254,8 +161,7 @@ function FooterLinks() {
         <div className="py-7 border-t border-gray-200">
           <div className="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
             <span className="text-sm text-gray-500 ">
-              ©<a href="https://pagedone.io/">pagedone</a>2024, All rights
-              reserved.
+              ©<a href="https://pagedone.io/">ARGT</a>2024, All rights reserved.
             </span>
             <div className="flex mt-4 space-x-4 sm:justify-center lg:mt-0 ">
               <a
