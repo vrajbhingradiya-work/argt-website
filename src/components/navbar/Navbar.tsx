@@ -136,7 +136,7 @@ function FixedNavbar({ pathname }: any) {
 
   const navbarOptions = [
     { title: "Home", url: "/" },
-    { title: "About", url: "/#aboutus" },
+    { title: "About", url: "/#about-us" },
     { title: "Services", url: "/#services" },
   ];
 
