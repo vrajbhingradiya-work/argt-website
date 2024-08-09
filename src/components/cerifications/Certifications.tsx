@@ -12,11 +12,14 @@ import Image from "next/image";
 
 function Certifications() {
   return (
-    <div className=" text-dark-blue py-16 px-16 xl:p-0 xl:py-16 flex flex-col  w-full justify-center items-center bg-white h-auto ">
+    <div
+      id="certifications"
+      className=" max-w-[100vw] overflow-hidden text-dark-blue py-16 px-16 xl:p-0 xl:py-16 flex flex-col  w-full justify-center items-center bg-white h-auto "
+    >
       <div className="relative w-full xl:max-w-[1200px] flex flex-col gap-4 xl:pb-16">
         <div className="w-full  h-full ">
           <SlideInFromBottom sequence={0}>
-            <div className="w-[100%] text-left flex flex-col">
+            <div className="w-[100%] text-center xl:text-left flex flex-col">
               <span
                 className="text-3xl 
                  md:text-5xl font-medium tracking-tight"
@@ -78,7 +81,7 @@ function CertificationLogos() {
   return (
     <div className="w-full flex justify-center items-center bg-white py-16 ">
       <div className="w-full  flex items-center justify-center">
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="w-full grid grid-cols-2 lg:grid-cols-4 gap-8">
           {clientsList.map((client: any, index: any) => {
             return (
               <SlideInFromBottom key={index} sequence={index + 2}>

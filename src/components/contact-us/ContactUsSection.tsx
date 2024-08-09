@@ -1,11 +1,69 @@
-import Link from "next/link";
+"use client";
 import SlideInFromBottom from "../animations/SlideInFromBottom";
-
+import React, { useState, useEffect } from "react";
 const ContactUsSection = () => {
+  const [formData, setFormData] = useState({
+    clientName: "",
+    clientNumber: "",
+    clientEmailId: "",
+    clientMessage: "",
+  });
+
+  const [buttonDisabled, setButtonDisabled] = React.useState(false);
+  const [loading, setLoading] = React.useState(false);
+
+  useEffect(() => {
+    if (
+      formData.clientName.length > 0 &&
+      formData.clientEmailId.length > 0 &&
+      formData.clientNumber.length > 0
+    ) {
+      setButtonDisabled(false);
+    } else {
+      setButtonDisabled(true);
+    }
+  }, [formData]);
+  const handleSubmit = async (e: any) => {
+    e.preventDefault();
+
+    try {
+      setLoading(true);
+      setButtonDisabled(true);
+      const response = await fetch("/api/send-email", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          clientName: formData.clientName,
+          clientNumber: formData.clientNumber,
+          clientEmailId: formData.clientEmailId,
+          clientMessage: formData.clientMessage,
+        }), // Convert formData to JSON string
+      });
+      console.log(response);
+      alert("Message successfully sent");
+      setFormData({
+        clientName: "",
+        clientNumber: "",
+        clientEmailId: "",
+        clientMessage: "",
+      });
+      setButtonDisabled(false);
+      setLoading(false);
+    } catch (err: any) {
+      console.error(err);
+      alert("Error, please try resubmitting the form");
+      setButtonDisabled(false);
+    }
+  };
   return (
-    <section id="contactus" className="bg-white dark:bg-gray-900">
+    <section
+      id="contact-us"
+      className="max-w-[100vw] overflow-hidden bg-white dark:bg-gray-900"
+    >
       <div>
-        <div className="text-dark-blue py-16 pb-0 px-28 xl:p-0 xl:py-32 xl:pb-0 flex flex-col gap-4 w-full justify-center items-center bg-white h-auto ">
+        <div className="text-dark-blue py-16 pb-0 px-6 md:px-28 xl:p-0 xl:py-32 xl:pb-0 flex flex-col gap-4 w-full justify-center items-center bg-white h-auto ">
           <div className="relative w-full xl:max-w-[1200px] flex flex-col gap-4 xl:pb-16">
             <div className="w-full  h-full ">
               <SlideInFromBottom sequence={0}>
@@ -52,7 +110,26 @@ const ContactUsSection = () => {
         </div>
       </div>
       <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-        <form action="#" className="space-y-8">
+        <form onSubmit={handleSubmit} className="space-y-8">
+          <div>
+            <label
+              htmlFor="name"
+              className="block mb-2 text-xl font-medium text-dark-blue dark:text-dark-blue"
+            >
+              Your Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              className="shadow-sm bg-gray-50 border-b-2 border-gray-300 text-dark-blue text-xl  focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark-blue dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+              placeholder="John Doe"
+              required
+              value={formData.clientName}
+              onChange={(e) => {
+                setFormData({ ...formData, clientName: e.target.value });
+              }}
+            />
+          </div>
           <div>
             <label
               htmlFor="email"
@@ -66,23 +143,32 @@ const ContactUsSection = () => {
               className="shadow-sm bg-gray-50 border-b-2 border-gray-300 text-dark-blue text-xl  focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark-blue dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
               placeholder="name@gmail.com"
               required
+              value={formData.clientEmailId}
+              onChange={(e) => {
+                setFormData({ ...formData, clientEmailId: e.target.value });
+              }}
             />
           </div>
           <div>
             <label
-              htmlFor="subject"
+              htmlFor="phone"
               className="block mb-2 text-xl font-medium text-dark-blue dark:text-dark-blue"
             >
-              Subject
+              Your Phone Number
             </label>
             <input
-              type="text"
-              id="subject"
-              className="block p-3 w-full text-xl text-dark-blue bg-gray-50  border-b-2 border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark-blue dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-              placeholder="Let us know how we can help you"
+              type="number"
+              id="phone"
+              className="shadow-sm bg-gray-50 border-b-2 border-gray-300 text-dark-blue text-xl  focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark-blue dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+              placeholder="+91 234324XXXXX"
               required
+              value={formData.clientNumber}
+              onChange={(e) => {
+                setFormData({ ...formData, clientNumber: e.target.value });
+              }}
             />
           </div>
+
           <div className="sm:col-span-2">
             <label
               htmlFor="message"
@@ -95,15 +181,29 @@ const ContactUsSection = () => {
               rows={6}
               className="block p-2.5 w-full text-xl text-dark-blue bg-gray-50  shadow-sm border-b-2 border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-dark-blue dark:focus:ring-primary-500 dark:focus:border-primary-500"
               placeholder="Leave a comment..."
+              value={formData.clientMessage}
+              onChange={(e) =>
+                setFormData({
+                  ...formData,
+                  clientMessage: e.target.value,
+                })
+              }
             ></textarea>
           </div>
           <div className="flex justify-center items-center w-full">
-            <button
-              type="submit"
-              className="py-3 px-5 text-xl font-medium text-center text-white tracking-wider  bg-bright-red sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 transition hover:ease-in-out duration-300  dark:hover:bg-dark-blue dark:focus:ring-primary-800"
-            >
-              SEND MESSAGE
-            </button>
+            {loading ? (
+              <button className="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-[#98A3AF] capitalize transition-colors duration-300 transdiv bg-blue-600 rounded-md hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-400 focus:ring-opacity-50">
+                Processing...
+              </button>
+            ) : (
+              <button
+                disabled={buttonDisabled}
+                type="submit"
+                className="py-3 px-5 text-xl font-medium text-center text-white tracking-wider  bg-bright-red sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 transition hover:ease-in-out duration-300  dark:hover:bg-dark-blue dark:focus:ring-primary-800"
+              >
+                SEND MESSAGE
+              </button>
+            )}
           </div>
         </form>
       </div>

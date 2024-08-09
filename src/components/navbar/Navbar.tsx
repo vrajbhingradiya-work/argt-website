@@ -146,8 +146,8 @@ function FixedNavbar({ pathname }: any) {
       animate={mobileNavOpen ? "opened" : "closed"}
       className={`${
         pathname === "/"
-          ? " text-white fixed transparent  xl:absolute top-0  z-30 flex justify-between w-full px-8 xl:px-28 py-4     "
-          : "text-black fixed transparent  xl:absolute top-0 z-30  flex justify-between w-full px-8 xl:px-28 py-4 "
+          ? " text-white fixed transparent  xl:absolute top-0  z-30 flex justify-between w-full px-8 xl:px-28 py-4 bg-dark-blue    "
+          : "text-black fixed transparent  xl:absolute top-0 z-30  flex justify-between w-full px-8 xl:px-28 py-4 bg-dark-blue "
       }`}
     >
       {mobileNavOpen ? (
@@ -158,7 +158,7 @@ function FixedNavbar({ pathname }: any) {
           >
             <div className=" flex justify-between items-center p-4 w-full">
               <Link className="flex justify-center items-center " href="/">
-                <div className="w-[100px] lg:w-[80px] ">
+                <div className="pl-4 xl:pl-0 w-[60px] lg:w-[80px] ">
                   <Image
                     src={logo}
                     className="w-full"
@@ -218,7 +218,7 @@ function FixedNavbar({ pathname }: any) {
                     className="p-24"
                   >
                     <Link
-                      href="/contactus"
+                      href="/#contact-us"
                       onClick={() => setMobileNavOpen(false)}
                       className=" bg-blue-600 hover:bg-blue-400 transition p-4  text-white font-base hover:ease-linear rounded-lg"
                     >
@@ -238,7 +238,7 @@ function FixedNavbar({ pathname }: any) {
                 <div className="overflow-y-hidden ">
                   <SimpleReveal sequence={1}>
                     <motion.div
-                      className="text-black text-2xl font-bold gap-4 flex items-center w-full"
+                      className="text-black text-2xl font-bold gap-4 flex  items-center w-full"
                       variants={hideNavItemsVariant}
                     >
                       {/* argt logo */}
@@ -247,7 +247,7 @@ function FixedNavbar({ pathname }: any) {
                         className="flex justify-center items-center "
                         href="/"
                       >
-                        <div className="w-[100px] lg:w-[80px] ">
+                        <div className="w-[40px] lg:w-[80px] ">
                           <Image
                             src={logo}
                             className="w-full"
@@ -268,7 +268,7 @@ function FixedNavbar({ pathname }: any) {
                         whileTap={{ scale: 0.85 }}
                         className="navbarItem"
                       >
-                        <Link className="text-xl" href={`#${element.url}`}>
+                        <Link className="text-xl" href={`${element.url}`}>
                           {element.title}
                         </Link>
                       </motion.button>
@@ -282,7 +282,7 @@ function FixedNavbar({ pathname }: any) {
               <SimpleReveal sequence={5}>
                 <motion.button whileTap={{ scale: 0.85 }} className="p-2">
                   <Link
-                    href="/#contactus"
+                    href="/#contact-us"
                     className="w-full  font-medium text-base   
                    shadow-slate-100 cursor-pointer flex justify-evenly items-center gap-4 group "
                   >
@@ -300,14 +300,14 @@ function FixedNavbar({ pathname }: any) {
         </div>
       )}
 
-      <div className="xl:hidden">
+      <div className="xl:hidden flex justify-center items-center">
         <motion.div
           variants={hideNavItemsVariant}
           onClick={() => setMobileNavOpen(true)}
         >
           {/* set Mobile menu open icon */}
           <svg
-            className="fill-blue-600"
+            className="fill-white"
             xmlns="http://www.w3.org/2000/svg"
             id="Bold"
             viewBox="0 0 24 24"
@@ -413,7 +413,7 @@ function NavbarScroll({ isScrolling }: any) {
 
   const navbarOptions = [
     { title: "Home", url: "/" },
-    { title: "About", url: "/#aboutus" },
+    { title: "About", url: "/#about-us" },
     { title: "Services", url: "/#services" },
   ];
   return (
@@ -462,7 +462,7 @@ function NavbarScroll({ isScrolling }: any) {
                       whileTap={{ scale: 0.85 }}
                       className="navbarItem"
                     >
-                      <Link href={`#${element.url}`}>{element.title}</Link>
+                      <Link href={`${element.url}`}>{element.title}</Link>
                     </motion.button>
                   </Reveal>
                 );
@@ -474,7 +474,7 @@ function NavbarScroll({ isScrolling }: any) {
             <SimpleReveal sequence={5}>
               <motion.button whileTap={{ scale: 0.85 }} className="p-2">
                 <Link
-                  href="/#contactus"
+                  href="/#contact-us"
                   className="w-full  font-medium text-base   
                    shadow-slate-100 cursor-pointer flex justify-evenly items-center gap-4 group "
                 >

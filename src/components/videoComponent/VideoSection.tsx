@@ -5,8 +5,8 @@ import { CountUpStats } from "../miniComponents/CountUpStats";
 
 function VideoSection() {
   return (
-    <div>
-      <div className="text-white py-16 px-28 xl:p-0 xl:py-32 flex flex-col gap-4 w-full justify-center items-center bg-dark-blue h-auto ">
+    <div className="w-full max-w-[100vw] overflow-hidden">
+      <div className="text-white py-16 px-6 sm:px-28 xl:p-0 xl:py-32 flex flex-col gap-4 w-full justify-center items-center bg-dark-blue h-auto ">
         <div className="relative w-full xl:max-w-[1200px] flex flex-col gap-4 xl:pb-16">
           <div className="w-full  h-full ">
             <SlideInFromBottom sequence={0}>

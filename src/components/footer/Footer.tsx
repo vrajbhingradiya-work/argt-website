@@ -16,12 +16,12 @@ export default Footer;
 
 function FooterLinks() {
   return (
-    <footer className="w-full py-14 bg-white/90 text-dark-blue">
+    <footer className="max-w-[100vw] py-14  bg-dark-blue text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="border-b border-gray-200 pb-14 flex justify-between items-center flex-col gap-8 lg:gap-0 lg:flex-row">
-          <div className="block">
+          {/* <div className="block">
             <h3 className="font-manrope text-3xl text-gray-900 font-bold mb-2 text-center lg:text-left">
-              Sign up to our webpage
+              Sign up to our newletter
             </h3>
             <p className="text-gray-500 text-center lg:text-left">
               Stay up to date with the latest update and announcement.
@@ -42,7 +42,7 @@ function FooterLinks() {
                 <MailIcon className="bg-bright-red transition-all group-hover:ease-in-out  group-hover:bg-dark-blue duration-500 h-[30px] w-[30px]  fill-white" />
               </div>
             </button>
-          </div>
+          </div> */}
         </div>
         {/*Grid*/}
         <div className="grid grid-cols-2 min-[690px]:grid-cols-4 lg:grid-cols-6 gap-4 xl:gap-8 pt-14 pb-10 max-w-xs mx-auto min-[690px]:max-w-2xl lg:max-w-full">
@@ -57,101 +57,197 @@ function FooterLinks() {
                 />
               </div>
             </Link>
-            <p className="py-8 text-gray-500 lg:max-w-xs text-center lg:text-left">
+            <p className="w-[280px] text-left md:text-center md:w-full pt-8 xl:pt-0 xl:pb-8 pb-4 text-gray-500 lg:max-w-xs  lg:text-left">
               Trusted in more than 100 countries &amp; 5 million customers. Have
               any query ?
             </p>
+            <p className="font-bold ">Address:</p>
+            <Link
+              href="https://maps.app.goo.gl/TSqyzZd4DznZqfzz5"
+              className="hover:underline w-[280px] md:w-[90%] "
+            >
+              8/104-A, Mominabad St, Indira Colony, Hanumesh Nagar, Guntakal,
+              Andhra Pradesh 515801
+            </Link>
           </div>
           {/*End Col*/}
-          <div className="lg:mx-auto text-left ">
-            <h4 className="text-lg text-gray-900 font-medium mb-7">Pagedone</h4>
+          <div className="hidden lg:block lg:mx-auto text-left ">
+            {/* <h4 className="text-lg text-gray-900 font-medium mb-7 underline">Guide</h4>
             <ul className="text-sm  transition-all duration-500">
-              <li className="mb-6">
-                <a
-                  href="javascript:;"
+              <li className="mb-2 md:mb-6">
+                <Link
+                  href="/"
                   className="text-gray-600 whitespace-nowrap hover:text-gray-900"
                 >
                   Home
-                </a>
+                </Link>
               </li>
-              <li className="mb-6">
-                <a
-                  href="javascript:;"
+              <li className="mb-2 md:mb-6">
+                <Link
+                  href="/#about-us"
                   className=" text-gray-600 whitespace-nowrap hover:text-gray-900"
                 >
                   About
-                </a>
+                </Link>
               </li>
-              <li className="mb-6">
-                <a
-                  href="javascript:;"
+              {/* <li className="mb-2 md:mb-6">
+                <Link
+                  href="/"
                   className=" text-gray-600 whitespace-nowrap hover:text-gray-900"
                 >
                   Pricing
-                </a>
-              </li>
-              <li className="mb-6">
-                <a
-                  href="javascript:;"
+                </Link>
+              </li> */}
+            {/* <li className="mb-2 md:mb-6">
+                <Link
+                  href="/#services"
                   className=" text-gray-600 whitespace-nowrap hover:text-gray-900"
                 >
-                  Features
-                </a>
+                  Services
+                </Link>
               </li>
-              <li className="mb-6">
-                <a
-                  href="javascript:;"
+              <li className="mb-2 md:mb-6">
+                <Link
+                  href="/#clients"
                   className=" text-gray-600 whitespace-nowrap hover:text-gray-900"
                 >
-                  Pro Version
-                </a>
+                  Clients
+                </Link>
+              </li>
+              <li className="mb-2 md:mb-6">
+                <Link
+                  href="/#certifications"
+                  className=" text-gray-600 whitespace-nowrap hover:text-gray-900"
+                >
+                  Certifications
+                </Link>
+              </li>
+              <li className="mb-2 md:mb-6">
+                <Link
+                  href="/#contact-us"
+                  className=" text-gray-600 whitespace-nowrap hover:text-gray-900"
+                >
+                  Contact Us
+                </Link>
+              </li></ul> */}
+          </div>
+          {/*End Col*/}
+          <div className=" lg:mx-auto text-left ">
+            <h4 className="text-lg text-gray-900 font-medium mb-7 underline">
+              Guide
+            </h4>
+            <ul className="text-sm  transition-all duration-500">
+              <li className="mb-2 md:mb-6">
+                <Link
+                  href="/"
+                  className="text-gray-600 whitespace-nowrap hover:text-gray-900"
+                >
+                  Home
+                </Link>
+              </li>
+              <li className="mb-2 md:mb-6">
+                <Link
+                  href="/#about-us"
+                  className=" text-gray-600 whitespace-nowrap hover:text-gray-900"
+                >
+                  About
+                </Link>
+              </li>
+              {/* <li className="mb-2 md:mb-6">
+                <Link
+                  href="/"
+                  className=" text-gray-600 whitespace-nowrap hover:text-gray-900"
+                >
+                  Pricing
+                </Link>
+              </li> */}
+              <li className="mb-2 md:mb-6">
+                <Link
+                  href="/#services"
+                  className=" text-gray-600 whitespace-nowrap hover:text-gray-900"
+                >
+                  Services
+                </Link>
+              </li>
+              <li className="mb-2 md:mb-6">
+                <Link
+                  href="/#clients"
+                  className=" text-gray-600 whitespace-nowrap hover:text-gray-900"
+                >
+                  Clients
+                </Link>
+              </li>
+              <li className="mb-2 md:mb-6">
+                <Link
+                  href="/#certifications"
+                  className=" text-gray-600 whitespace-nowrap hover:text-gray-900"
+                >
+                  Certifications
+                </Link>
+              </li>
+              <li className="mb-2 md:mb-6">
+                <Link
+                  href="/#contact-us"
+                  className=" text-gray-600 whitespace-nowrap hover:text-gray-900"
+                >
+                  Contact Us
+                </Link>
               </li>
             </ul>
           </div>
           {/*End Col*/}
-          {/*End Col*/}={/*End Col*/}
+
           <div className="lg:mx-auto text-left ">
-            <h4 className="text-lg text-gray-900 font-medium mb-7">Support</h4>
+            <h4 className="text-lg text-gray-900 font-medium mb-7 underline">
+              Support
+            </h4>
             <ul className="text-sm  transition-all duration-500">
-              <li className="mb-6">
-                <a
-                  href="javascript:;"
+              <li className="mb-2 md:mb-6">
+                <Link
+                  href="tel:+919704769851"
                   className="text-gray-600 whitespace-nowrap hover:text-gray-900"
                 >
                   Customer Support
-                </a>
+                </Link>
               </li>
-              <li className="mb-6">
-                <a
-                  href="javascript:;"
-                  className=" text-gray-600 whitespace-nowrap hover:text-gray-900"
+              <li className="mb-2 md:mb-6">
+                <Link
+                  href="tel:+919704769851"
+                  className="text-gray-600 whitespace-nowrap hover:text-gray-900"
                 >
-                  Cookies
-                </a>
+                  Call Us
+                </Link>
               </li>
-              <li className="mb-6">
-                <a
-                  href="javascript:;"
+            </ul>
+          </div>
+          <div className="lg:mx-auto text-left ">
+            <h4 className="text-lg text-gray-900 font-medium mb-7 underline">
+              Legals
+            </h4>
+            <ul className="text-sm  transition-all duration-500">
+              <li className="mb-2 md:mb-6">
+                <Link
+                  href="/"
                   className=" text-gray-600 whitespace-nowrap hover:text-gray-900"
                 >
                   License
-                </a>
+                </Link>
               </li>
-              <li className="mb-6">
-                <a
-                  href="javascript:;"
+              <li className="mb-2 md:mb-6">
+                <Link
+                  href="/#TERMS"
                   className=" text-gray-600 whitespace-nowrap hover:text-gray-900"
                 >
                   Terms &amp; Conditions
-                </a>
+                </Link>
               </li>
-              <li className="mb-6">
-                <a
-                  href="javascript:;"
+              <li className="mb-2 md:mb-6">
+                <Link
+                  href="/PrivacyPolicy"
                   className=" text-gray-600 whitespace-nowrap hover:text-gray-900"
                 >
                   Privacy Policy
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -161,12 +257,18 @@ function FooterLinks() {
         <div className="py-7 border-t border-gray-200">
           <div className="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
             <span className="text-sm text-gray-500 ">
-              ©<a href="https://pagedone.io/">ARGT</a>2024, All rights reserved.
+              ©<Link href="/">ARGT </Link>2024, All rights reserved by{" "}
+              <Link
+                href="https://digitalfry.in"
+                className="hover:pl-2 hover:tracking-wider tracking-wide transition-all duration-500 underline hover:no-underline text-white/50"
+              >
+                Digital Fry
+              </Link>
             </span>
             <div className="flex mt-4 space-x-4 sm:justify-center lg:mt-0 ">
-              <a
-                href="javascript:;"
-                className="w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center bg-[#33CCFF] hover:bg-gray-900"
+              <Link
+                href="/"
+                className="w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center bg-none lg:hover:scale-125"
               >
                 <svg
                   width={21}
@@ -183,10 +285,10 @@ function FooterLinks() {
                     />
                   </g>
                 </svg>
-              </a>
-              <a
-                href="javascript:;"
-                className="relative w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center bg-[linear-gradient(45deg,#FEE411_6.9%,#FEDB16_10.98%,#FEC125_17.77%,#FE983D_26.42%,#FE5F5E_36.5%,#FE2181_46.24%,#9000DC_85.57%)]  hover:bg-gradient-to-b from-gray-900 to-gray-900  
+              </Link>
+              <Link
+                href="/"
+                className="relative w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center lg:hover:scale-125 
                   "
               >
                 <svg
@@ -200,10 +302,10 @@ function FooterLinks() {
                     fill="white"
                   />
                 </svg>
-              </a>
-              <a
-                href="javascript:;"
-                className="relative w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center bg-[#337FFF]  hover:bg-gray-900 "
+              </Link>
+              <Link
+                href="/"
+                className="relative w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center lg:hover:scale-125 "
               >
                 <svg
                   className="w-[1rem] h-[1rem] text-white"
@@ -216,10 +318,10 @@ function FooterLinks() {
                     fill="currentColor"
                   />
                 </svg>
-              </a>
-              <a
-                href="javascript:;"
-                className="relative w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center bg-[#FF0000]  hover:bg-gray-900 "
+              </Link>
+              <Link
+                href="/"
+                className="relative w-8 h-8 rounded-full transition-all duration-500 flex justify-center items-center lg:hover:scale-125 "
               >
                 <svg
                   className="w-[1.25rem] h-[0.875rem] text-white"
@@ -234,7 +336,7 @@ function FooterLinks() {
                     fill="white"
                   />
                 </svg>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -8,8 +8,8 @@ import SimpleFadeIn from "../animations/SimpleFadeIn";
 
 function HeroSection() {
   return (
-    <div className="overflow-hidden w-full">
-      <div className="relative  w-full bg-black">
+    <div className="max-w-[100vw] overflow-hidden w-full">
+      <div className="relative pt-20 md:mt-0  w-full bg-black">
         <SimpleFadeIn sequence={2}>
           <div className="hidden relative md:block object-cover h-[50vh] xl:h-[100vh] w-full ">
             <Image
@@ -36,14 +36,14 @@ function HeroSection() {
           <div className="w-full  h-full bg-black/60 flex flex-col items-center  gap-3 md:gap-6 pl-8 md:p-20 justify-end pb-16 ">
             <div className="w-full xl:max-w-[1200px]   h-full  flex flex-col gap-3 md:gap-6 pl-8 md:p-20 xl:px-0 justify-end pb-16 ">
               <SlideInFromBottom sequence={0}>
-                <div className="w-[50%]">
+                <div className="w-[80%]  md:w-[50%]">
                   <span className="text-4xl  md:text-7xl font-semibold tracking-tight">
                     {"WE PROVIDE HIGHEST QUALITY IMPORT-EXPORT SERVICES"}
                   </span>
                 </div>
               </SlideInFromBottom>
               <SlideInFromBottom sequence={2}>
-                <div className="w-[40%]">
+                <div className="w-[80%]  md:w-[40%]">
                   <span className="text-xl md:text-2xl pr-[30%] md:p-0 md:-mt-4 md:mb-4 xl:mb-2">
                     With 60 years of experience, we have become one of the
                     largest logistics and freight forwarding companies.
@@ -61,7 +61,7 @@ function HeroSection() {
             </label> */}
               <SimpleFadeIn sequence={12}>
                 <Button
-                  link="/#contactus"
+                  link="/#contact-us"
                   title=" GET IN TOUCH"
                   className="bg-bright-red   fill-white hover:bg-white hover:text-bright-red  w-[180px] md:w-[280px] text-base md:text-xl"
                 ></Button>

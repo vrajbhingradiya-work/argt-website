@@ -9,9 +9,9 @@ import Link from "next/link";
 
 function AboutUs() {
   return (
-    <div>
-      <div className="py-16 px-28 xl:p-0 xl:py-32 flex gap-4 w-full justify-center items-center bg-white h-auto ">
-        <div className="w-full xl:max-w-[1200px] flex  justify-center md:gap-12 xl:gap-32 items-center">
+    <div id="about-us" className="max-w-[100vw] w-full overflow-hidden">
+      <div className="py-16 px-6 md:px-28 xl:p-0 xl:py-32 flex gap-4 w-full justify-center items-center bg-white h-auto ">
+        <div className="w-full xl:max-w-[1200px] flex md:flex-row flex-col justify-center md:gap-12 xl:gap-32 items-center">
           <div className="flex h-full justify-center items-center">
             <div className="w-full  h-full text-black  flex flex-col  gap-3 md:gap-6 pl-8 md:p-20 xl:p-0 justify-center pb-16 xl:pb-40">
               <SlideInFromBottom sequence={0}>
@@ -50,15 +50,15 @@ function AboutUs() {
               </SimpleFadeIn>
             </div>
           </div>
-          <div className="w-full  h-full text-black  flex flex-col gap-3 md:gap-6 pl-8 md:p-20 justify-end pb-16 xl:pb-40">
+          <div className=" flex w-full  h-full text-black  flex-col gap-3 md:gap-6 pl-8 md:p-20 justify-end pb-16 xl:pb-40">
             <div className="relative iamge-section-about-us h-[80%]">
               <div className="">
                 <Image src={image} alt="img-1" objectFit="contain" />
               </div>
-              <div className="absolute -top-20 -right-10 img-2 w-[45%]">
+              <div className="absolute hidden md:block lg:-top-20 lg:-right-10 img-2 w-[45%]">
                 <Image src={image} alt="img-1" objectFit="contain" />
               </div>
-              <div className="absolute -bottom-20 -left-20 img-3 w-[45%]">
+              <div className="absolute hidden md:block lg:-bottom-20 lg:-left-20 img-3 w-[45%]">
                 <Image src={image} alt="img-1" objectFit="contain" />
               </div>
             </div>
