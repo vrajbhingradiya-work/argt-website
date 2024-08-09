@@ -1,15 +1,18 @@
 import Image from "next/image";
 import React from "react";
-import image1 from "@/public/images/services/services-1.jpeg";
-import image2 from "@/public/images/services//services-2.jpeg";
-import image3 from "@/public/images/services/services-3.jpg";
+import image1 from "@/public/images/services/01.jpg";
+import image2 from "@/public/images/services/02.jpeg";
+import image3 from "@/public/images/services/03.jpg";
+import image4 from "@/public/images/services/04.jpg";
+import image5 from "@/public/images/services/05.jpg";
+import image6 from "@/public/images/services/06.jpg";
 import SlideInFromBottom from "../animations/SlideInFromBottom";
 
 function Services() {
   const servicesList = [
     {
       title: "SUPPLY CHAIN MANAGEMENT",
-      imgSrc: image2,
+      imgSrc: image1,
       description:
         "Absolutio teres hippotoxota est. Ubi est alter lapsus? Ubi est placidus elogium? Velox, superbus fiscinas absolute fallere de salvus, albus coordinatae.",
     },
@@ -27,19 +30,19 @@ function Services() {
     },
     {
       title: "SUPPLY CHAIN MANAGEMENT",
-      imgSrc: image2,
+      imgSrc: image4,
       description:
         "Absolutio teres hippotoxota est. Ubi est alter lapsus? Ubi est placidus elogium? Velox, superbus fiscinas absolute fallere de salvus, albus coordinatae.",
     },
     {
       title: "IMPORT",
-      imgSrc: image2,
+      imgSrc: image5,
       description:
         "Absolutio teres hippotoxota est. Ubi est alter lapsus? Ubi est placidus elogium? Velox, superbus fiscinas absolute fallere de salvus, albus coordinatae.",
     },
     {
       title: "EXPORT",
-      imgSrc: image3,
+      imgSrc: image6,
       description:
         "Absolutio teres hippotoxota est. Ubi est alter lapsus? Ubi est placidus elogium? Velox, superbus fiscinas absolute fallere de salvus, albus coordinatae.",
     },
@@ -71,16 +74,16 @@ export default Services;
 
 function ServiceCard({ service }: any) {
   return (
-    <div className="relative mx-auto w-[320px] sm:w-[250px] lg:w-[350px]  ">
+    <div className="relative mx-auto w-[320px] sm:w-[250px] lg:w-[350px] text-white ">
       <div className="relative mx-auto w-[320px] sm:w-[250px] lg:w-[350px] ">
         <Image src={service.imgSrc} alt="img" className="object-cover" />
       </div>
       <div className="absolute group flex flex-col items-center justify-center bg-black/50 mx-auto w-[320px] sm:w-[250px] lg:w-[350px] h-full top-0 left-0">
-        <span className="text-2xl font-semibold px-[20%] text-center group-hover:opacity-100 opacity-0 transition-all ease-in-out duration-300 ">
+        <span className="text-white text-2xl font-semibold px-[20%] text-center group-hover:opacity-100 opacity-0 transition-all ease-in-out duration-300 ">
           {service.title}
         </span>
 
-        <span className="text-base text-center w-[80%] group-hover:opacity-100 opacity-0 transition-all ease-in-out duration-300">
+        <span className="text-white text-base text-center w-[80%] group-hover:opacity-100 opacity-0 transition-all ease-in-out duration-300">
           {service.description}
         </span>
       </div>

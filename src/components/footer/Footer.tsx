@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { IoMdMail as MailIcon } from "react-icons/io";
 import logo from "@/public/logo/argt-logo.png";
 
 function Footer() {
@@ -215,7 +214,7 @@ function FooterLinks() {
                   href="tel:+919704769851"
                   className="text-gray-600 whitespace-nowrap hover:text-gray-900"
                 >
-                  Call Us
+                  Call Us +91 97047 69851
                 </Link>
               </li>
             </ul>
@@ -235,7 +234,7 @@ function FooterLinks() {
               </li>
               <li className="mb-2 md:mb-6">
                 <Link
-                  href="/#TERMS"
+                  href="https://drive.google.com/file/d/1FfESzwLvHSXkjA3tFfeb-d9dMt5_f6nr/view"
                   className=" text-gray-600 whitespace-nowrap hover:text-gray-900"
                 >
                   Terms &amp; Conditions
@@ -243,7 +242,7 @@ function FooterLinks() {
               </li>
               <li className="mb-2 md:mb-6">
                 <Link
-                  href="/PrivacyPolicy"
+                  href="https://drive.google.com/file/d/1lIrDBBFc-sUa9YDyEdaDP9IyqtusWTSE/view?usp=share_link"
                   className=" text-gray-600 whitespace-nowrap hover:text-gray-900"
                 >
                   Privacy Policy
@@ -257,7 +256,7 @@ function FooterLinks() {
         <div className="py-7 border-t border-gray-200">
           <div className="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
             <span className="text-sm text-gray-500 ">
-              ©<Link href="/">ARGT </Link>2024, All rights reserved by{" "}
+              ©<Link href="/">ARGT </Link> 2024, All rights reserved by{" "}
               <Link
                 href="https://digitalfry.in"
                 className="hover:pl-2 hover:tracking-wider tracking-wide transition-all duration-500 underline hover:no-underline text-white/50"

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import Button from "../miniComponents/Button";
-import image from "@/public/images/banner/maritime.jpeg";
+import image from "@/public/images/banner/maritime-2.jpg";
 import SlideInFromBottom from "../animations/SlideInFromBottom";
 import SimpleFadeIn from "../animations/SimpleFadeIn";
 
@@ -45,8 +45,9 @@ function HeroSection() {
               <SlideInFromBottom sequence={2}>
                 <div className="w-[80%]  md:w-[40%]">
                   <span className="text-xl md:text-2xl pr-[30%] md:p-0 md:-mt-4 md:mb-4 xl:mb-2">
-                    With 60 years of experience, we have become one of the
-                    largest logistics and freight forwarding companies.
+                    With a deep understanding of global markets and a commitment
+                    to excellence, we facilitate seamless and efficient export
+                    and import services across various industries.
                   </span>
                 </div>
               </SlideInFromBottom>
