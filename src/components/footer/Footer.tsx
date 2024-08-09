@@ -234,7 +234,7 @@ function FooterLinks() {
               </li>
               <li className="mb-2 md:mb-6">
                 <Link
-                  href="https://drive.google.com/file/d/1FfESzwLvHSXkjA3tFfeb-d9dMt5_f6nr/view"
+                  href="https://drive.google.com/file/d/1eh5ho7ysnOnoVpdZEW3JV11pVYCIDdac/view?usp=share_link"
                   className=" text-gray-600 whitespace-nowrap hover:text-gray-900"
                 >
                   Terms &amp; Conditions
