@@ -1,13 +1,10 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import Button from "../miniComponents/Button";
 import image1 from "@/public/images/aboutus/01.jpg";
 import image2 from "@/public/images/aboutus/02.jpg";
 import image3 from "@/public/images/aboutus/03.jpg";
 import SlideInFromBottom from "../animations/SlideInFromBottom";
-import SimpleFadeIn from "../animations/SimpleFadeIn";
-import Link from "next/link";
 
 function AboutUs() {
   return (
