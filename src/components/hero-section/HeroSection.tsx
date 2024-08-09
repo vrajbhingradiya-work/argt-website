@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import Button from "../miniComponents/Button";
-import image from "@/public/images/banner/maritime-2.jpg";
+import image from "@/public/banner/maritime-2.jpg";
 import SlideInFromBottom from "../animations/SlideInFromBottom";
 import SimpleFadeIn from "../animations/SimpleFadeIn";
 

@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import image1 from "@/public/images/services/01.jpg";
-import image2 from "@/public/images/aboutus/02.jpg";
-import image3 from "@/public/images/aboutus/03.jpg";
+import image1 from "@/public/about-us/01.jpg";
+import image2 from "@/public/about-us/02.jpg";
+import image3 from "@/public/about-us/03.jpg";
 import SlideInFromBottom from "../animations/SlideInFromBottom";
 
 function AboutUs() {

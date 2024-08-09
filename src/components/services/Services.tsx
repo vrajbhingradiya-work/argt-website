@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import image1 from "@/public/images/services/01.jpg";
-import image2 from "@/public/images/services/02.jpeg";
-import image3 from "@/public/images/services/03.jpg";
-import image4 from "@/public/images/services/04.jpg";
-import image5 from "@/public/images/services/05.jpg";
-import image6 from "@/public/images/services/06.jpg";
+import image1 from "@/public/services/01.jpg";
+import image2 from "@/public/services/02.jpeg";
+import image3 from "@/public/services/03.jpg";
+import image4 from "@/public/services/04.jpg";
+import image5 from "@/public/services/05.jpg";
+import image6 from "@/public/services/06.jpg";
 import SlideInFromBottom from "../animations/SlideInFromBottom";
 
 function Services() {
