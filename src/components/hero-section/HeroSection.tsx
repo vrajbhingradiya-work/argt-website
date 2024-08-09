@@ -8,7 +8,7 @@ import SimpleFadeIn from "../animations/SimpleFadeIn";
 
 function HeroSection() {
   return (
-    <div className="max-w-[100vw] overflow-hidden w-full">
+    <div className="max-w-[100vw] overflow-hidden w-full text-white">
       <div className="relative pt-20 md:mt-0  w-full bg-black">
         <SimpleFadeIn sequence={2}>
           <div className="hidden relative md:block object-cover h-[50vh] xl:h-[100vh] w-full ">
