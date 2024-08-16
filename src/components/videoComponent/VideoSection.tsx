@@ -19,7 +19,7 @@ function VideoSection() {
                 </span>
                 <span
                   className="text-3xl
-                     md:text-5xl font-medium tracking-tight"
+                     md:text-5xl font-medium tracking-tight text-secondary"
                 >
                   {"DEVELOPMENT OF YOUR BUSINESS! "}
                 </span>
