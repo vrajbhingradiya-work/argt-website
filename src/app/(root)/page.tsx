@@ -5,7 +5,7 @@ import Certifications from "@/components/cerifications/Certifications";
 import Clients from "@/components/clients/Clients";
 import ContactUsSection from "@/components/contact-us/ContactUsSection";
 import HeroSection from "@/components/hero-section/HeroSection";
-import Products from "@/components/services/Products";
+import Products from "@/components/products/Products";
 import Stats from "@/components/videoComponent/Stats";
 import VideoSection from "@/components/videoComponent/VideoSection";
 
