@@ -15,22 +15,22 @@ function VideoSection() {
                   className="text-3xl
                      md:text-5xl font-medium tracking-tight text-secondary"
                 >
-                  {"WE OPEN UNLIMITED OPPURTUNITIES FOR THE"}
+                  {"UNLOCK BOUNDLESS OPPURTUNITIES"}
                 </span>
                 <span
                   className="text-3xl
                      md:text-5xl font-medium tracking-tight text-secondary"
                 >
-                  {"DEVELOPMENT OF YOUR BUSINESS! "}
+                  {" FOR YOUR BUSINESS GROWTH! "}
                 </span>
               </div>
             </SlideInFromBottom>
             <SlideInFromBottom sequence={2}>
               <div className="w-[100%] flex justify-center items-center py-8">
                 <span className="text-xl xl:max-w-[650px] text-center ">
-                  With ARGT, your business gets extra opportunities for faster
-                  business development worldwide. Watch the video below to find
-                  out more about our partnership program!
+                  With ARGT, your trading business gains unparalleled advantages
+                  for faster expansion in global markets. Take your
+                  import-export operations to new heights with our expertise!
                 </span>
               </div>
             </SlideInFromBottom>
