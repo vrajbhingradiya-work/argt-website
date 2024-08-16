@@ -1,13 +1,11 @@
 import React from "react";
 import SlideInFromBottom from "../animations/SlideInFromBottom";
-import client1 from "@/public/clients-logos/client1.jpg";
-import client2 from "@/public/clients-logos/client2.jpg";
-import client3 from "@/public/clients-logos/client3.png";
-import client4 from "@/public/clients-logos/client4.png";
-import client5 from "@/public/clients-logos/client5.png";
-import client6 from "@/public/clients-logos/client6.jpg";
-import client7 from "@/public/clients-logos/client7.png";
-import client8 from "@/public/clients-logos/client8.png";
+import certification1 from "@/public/certificates/01.jpeg";
+import certification2 from "@/public/certificates/02.jpeg";
+import certification3 from "@/public/certificates/03.jpeg";
+import certification4 from "@/public/certificates/04.png";
+import certification5 from "@/public/certificates/05.jpeg";
+import certification6 from "@/public/certificates/06.jpeg";
 import Image from "next/image";
 
 function Certifications() {
@@ -44,48 +42,40 @@ function Certifications() {
 export default Certifications;
 
 function CertificationLogos() {
-  const clientsList = [
+  const certificationsList = [
     {
       title: "SUPPLY CHAIN MANAGEMENT",
-      imgSrc: client1,
+      imgSrc: certification1,
     },
     {
       title: "IMPORT",
-      imgSrc: client2,
+      imgSrc: certification2,
     },
     {
       title: "EXPORT",
-      imgSrc: client3,
+      imgSrc: certification3,
     },
     {
       title: "SUPPLY CHAIN MANAGEMENT",
-      imgSrc: client4,
+      imgSrc: certification4,
     },
     {
       title: "IMPORT",
-      imgSrc: client5,
+      imgSrc: certification5,
     },
     {
       title: "EXPORT",
-      imgSrc: client6,
-    },
-    {
-      title: "SUPPLY CHAIN MANAGEMENT",
-      imgSrc: client7,
-    },
-    {
-      title: "IMPORT",
-      imgSrc: client8,
+      imgSrc: certification6,
     },
   ];
   return (
     <div className="w-full flex justify-center items-center bg-white py-16 ">
       <div className="w-full  flex items-center justify-center">
-        <div className="w-full grid grid-cols-2 lg:grid-cols-4 gap-8">
-          {clientsList.map((client: any, index: any) => {
+        <div className="w-full grid grid-cols-2 lg:grid-cols-3 gap-8 ">
+          {certificationsList.map((certification: any, index: any) => {
             return (
               <SlideInFromBottom key={index} sequence={index + 2}>
-                <CertificationCard client={client} />
+                <CertificationCard certification={certification} />
               </SlideInFromBottom>
             );
           })}
@@ -95,11 +85,15 @@ function CertificationLogos() {
   );
 }
 
-function CertificationCard({ client }: any) {
+function CertificationCard({ certification }: any) {
   return (
     <div className="relative flex justify-center items-center ">
-      <div className="relative w-[150px] ">
-        <Image src={client.imgSrc} alt="img" className="object-cover" />
+      <div className="relative w-[250px] flex justify-center items-center ">
+        <Image
+          src={certification.imgSrc}
+          alt="img"
+          className="object-contain flex justify-center items-center h-[250px] w-[250px]"
+        />
       </div>
     </div>
   );

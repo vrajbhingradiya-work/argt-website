@@ -3,11 +3,11 @@ import React from "react";
 import image1 from "@/public/products/01.jpg";
 import image2 from "@/public/products/02.jpeg";
 import image3 from "@/public/products/03.jpeg";
-import image4 from "@/public/products/04.jpeg";
+import image4 from "@/public/products/04.jpg";
 import image5 from "@/public/products/05.jpeg";
 import image6 from "@/public/products/06.jpeg";
 import image7 from "@/public/products/07.jpeg";
-import image8 from "@/public/products/08.jpeg";
+import image8 from "@/public/products/08.jpg";
 import image9 from "@/public/products/09.jpeg";
 import SlideInFromBottom from "../animations/SlideInFromBottom";
 
