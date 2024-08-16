@@ -64,7 +64,7 @@ function HeroSection() {
                 <Button
                   link="/#contact-us"
                   title=" GET IN TOUCH"
-                  className="bg-secondary   fill-white hover:bg-white hover:text-secondary  w-[180px] md:w-[280px] text-base md:text-xl"
+                  className="bg-secondary   fill-white hover:bg-white hover:text-dark-blue  w-[180px] md:w-[280px] text-base md:text-xl"
                 ></Button>
               </SimpleFadeIn>
             </div>

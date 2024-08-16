@@ -287,7 +287,7 @@ function FixedNavbar({ pathname }: any) {
                    shadow-slate-100 cursor-pointer flex justify-evenly items-center gap-4 group "
                   >
                     <div className="message-icon p-2 bg-secondary group-hover:rounded-full transition-all group-hover:ease-linear  duration-500">
-                      <MailIcon className="bg-secondary h-[30px] w-[30px]  fill-white" />
+                      <MailIcon className="bg-secondary h-[30px] w-[30px]  fill-dark-blue" />
                     </div>
                     <span className="group-hover:text-secondary transition-all group-hover:ease-in-out duration-300 text-white">
                       REQUEST A QUOTE

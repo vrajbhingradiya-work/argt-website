@@ -13,7 +13,7 @@ function VideoSection() {
               <div className="w-[100%] text-center flex flex-col">
                 <span
                   className="text-3xl
-                     md:text-5xl font-medium tracking-tight"
+                     md:text-5xl font-medium tracking-tight text-secondary"
                 >
                   {"WE OPEN UNLIMITED OPPURTUNITIES FOR THE"}
                 </span>
