@@ -43,7 +43,7 @@ function AboutUs() {
               {/* <SimpleFadeIn sequence={12}>
                 <Link
                   href="/#contactus"
-                  className=" text-base md:text-xl tracking-wider hover:text-bright-red transition ease-in-out duration-300"
+                  className=" text-base md:text-xl tracking-wider hover:text-secondary transition ease-in-out duration-300"
                 >
                   LEARN MORE
                 </Link>

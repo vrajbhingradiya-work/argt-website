@@ -286,10 +286,10 @@ function FixedNavbar({ pathname }: any) {
                     className="w-full  font-medium text-base   
                    shadow-slate-100 cursor-pointer flex justify-evenly items-center gap-4 group "
                   >
-                    <div className="message-icon p-2 bg-bright-red group-hover:rounded-full transition-all group-hover:ease-linear  duration-500">
-                      <MailIcon className="bg-bright-red h-[30px] w-[30px]  fill-white" />
+                    <div className="message-icon p-2 bg-secondary group-hover:rounded-full transition-all group-hover:ease-linear  duration-500">
+                      <MailIcon className="bg-secondary h-[30px] w-[30px]  fill-white" />
                     </div>
-                    <span className="group-hover:text-bright-red transition-all group-hover:ease-in-out duration-300 text-white">
+                    <span className="group-hover:text-secondary transition-all group-hover:ease-in-out duration-300 text-white">
                       REQUEST A QUOTE
                     </span>
                   </Link>
@@ -478,10 +478,10 @@ function NavbarScroll({ isScrolling }: any) {
                   className="w-full  font-medium text-base   
                    shadow-slate-100 cursor-pointer flex justify-evenly items-center gap-4 group "
                 >
-                  <div className="message-icon p-2 bg-bright-red group-hover:rounded-full transition-all group-hover:ease-in-out  duration-500">
-                    <MailIcon className="bg-bright-red h-[30px] w-[30px]  fill-white" />
+                  <div className="message-icon p-2 bg-secondary group-hover:rounded-full transition-all group-hover:ease-in-out  duration-500">
+                    <MailIcon className="bg-secondary h-[30px] w-[30px]  fill-white" />
                   </div>
-                  <span className="group-hover:text-bright-red transition-all group-hover:ease-in-out duration-300 text-white">
+                  <span className="group-hover:text-secondary transition-all group-hover:ease-in-out duration-300 text-white">
                     REQUEST A QUOTE
                   </span>
                 </Link>

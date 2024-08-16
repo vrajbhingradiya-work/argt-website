@@ -199,7 +199,7 @@ const ContactUsSection = () => {
               <button
                 disabled={buttonDisabled}
                 type="submit"
-                className="py-3 px-5 text-xl font-medium text-center text-white tracking-wider  bg-bright-red sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 transition hover:ease-in-out duration-300  dark:hover:bg-dark-blue dark:focus:ring-primary-800"
+                className="py-3 px-5 text-xl font-medium text-center text-white tracking-wider  bg-secondary sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 transition hover:ease-in-out duration-300  dark:hover:bg-dark-blue dark:focus:ring-primary-800"
               >
                 SEND MESSAGE
               </button>

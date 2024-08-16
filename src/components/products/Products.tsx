@@ -82,12 +82,8 @@ function ProductCard({ product }: any) {
         <Image src={product.imgSrc} alt="img" className="object-cover" />
       </div>
       <div className="absolute group flex flex-col items-center justify-center bg-black/50 mx-auto w-[320px] sm:w-[250px] lg:w-[350px] h-full top-0 left-0">
-        <span className="text-white text-2xl font-semibold px-[20%] text-center group-hover:opacity-100 opacity-0 transition-all ease-in-out duration-300 ">
+        <span className="text-secondary text-2xl font-semibold px-[20%] text-center group-hover:opacity-100 opacity-0 transition-all ease-in-out duration-300 ">
           {product.title.toUpperCase()}
-        </span>
-
-        <span className="text-white text-base text-center w-[80%] group-hover:opacity-100 opacity-0 transition-all ease-in-out duration-300">
-          {product.description}
         </span>
       </div>
     </div>

@@ -12,8 +12,8 @@ const config: Config = {
       current: "currentColor",
       white: "#ffffff",
       black: "#000000",
-      "dark-blue": "#0B1B2B",
-      "bright-red": "#D62536",
+      "dark-blue": "#292929",
+      secondary: "#F2CD93",
       gray: "#848D94",
     },
     extend: {

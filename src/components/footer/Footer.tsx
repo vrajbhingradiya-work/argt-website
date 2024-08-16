@@ -37,8 +37,8 @@ function FooterLinks() {
               title="subscription"
               className="h-14   px-7 xl:px-0 bg-indigo-600 shadow-sm rounded-full text-white font-bold group"
             >
-              <div className="message-icon p-2 bg-bright-red transition-all group-hover:bg-dark-blue hover:ease-in-out  duration-500">
-                <MailIcon className="bg-bright-red transition-all group-hover:ease-in-out  group-hover:bg-dark-blue duration-500 h-[30px] w-[30px]  fill-white" />
+              <div className="message-icon p-2 bg-secondary transition-all group-hover:bg-dark-blue hover:ease-in-out  duration-500">
+                <MailIcon className="bg-secondary transition-all group-hover:ease-in-out  group-hover:bg-dark-blue duration-500 h-[30px] w-[30px]  fill-white" />
               </div>
             </button>
           </div> */}
