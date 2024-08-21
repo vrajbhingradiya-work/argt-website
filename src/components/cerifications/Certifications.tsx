@@ -14,6 +14,8 @@ import certification11 from "@/public/clients-logos/client5.png";
 import certification12 from "@/public/clients-logos/client6.jpg";
 import certification13 from "@/public/clients-logos/client7.png";
 import certification14 from "@/public/clients-logos/client8.png";
+import certification15 from "@/public/certificates/07.png";
+
 import Image from "next/image";
 
 function Certifications() {
@@ -106,6 +108,10 @@ function CertificationLogos() {
     {
       title: "EXPORT",
       imgSrc: certification14,
+    },
+    {
+      title: "EXPORT",
+      imgSrc: certification15,
     },
   ];
   return (
