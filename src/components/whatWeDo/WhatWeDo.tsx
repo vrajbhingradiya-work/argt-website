@@ -1,9 +1,9 @@
 import React from "react";
 import SlideInFromBottom from "../animations/SlideInFromBottom";
-import service1 from "@/public/whatWeDo/service1.png";
-import service2 from "@/public/whatWeDo/service2.jpeg";
-import service3 from "@/public/whatWeDo/service3.jpeg";
-import service4 from "@/public/whatWeDo/service4.jpeg";
+import service1 from "@/public/WhatWeDo/service1.png";
+import service2 from "@/public/WhatWeDo/service2.jpeg";
+import service3 from "@/public/WhatWeDo/service3.jpeg";
+import service4 from "@/public/WhatWeDo/service4.jpeg";
 
 import Image from "next/image";
 
