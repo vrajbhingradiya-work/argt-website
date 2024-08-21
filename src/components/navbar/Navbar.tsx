@@ -282,7 +282,7 @@ function FixedNavbar({ pathname }: any) {
               <SimpleReveal sequence={5}>
                 <motion.button whileTap={{ scale: 0.85 }} className="p-2">
                   <Link
-                    href="/#contact-us"
+                    href="mailto:info@alroshangroups.com"
                     className="w-full  font-medium text-base   
                    shadow-slate-100 cursor-pointer flex justify-evenly items-center gap-4 group "
                   >
@@ -474,7 +474,7 @@ function NavbarScroll({ isScrolling }: any) {
             <SimpleReveal sequence={5}>
               <motion.button whileTap={{ scale: 0.85 }} className="p-2">
                 <Link
-                  href="/#contact-us"
+                  href="mailto:info@alroshangroups.com"
                   className="w-full  font-medium text-base   
                    shadow-slate-100 cursor-pointer flex justify-evenly items-center gap-4 group "
                 >
