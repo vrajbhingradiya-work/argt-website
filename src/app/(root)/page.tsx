@@ -8,6 +8,7 @@ import HeroSection from "@/components/hero-section/HeroSection";
 import Products from "@/components/products/Products";
 import Stats from "@/components/videoComponent/Stats";
 import VideoSection from "@/components/videoComponent/VideoSection";
+import WhatWeDo from "@/components/whatWeDo/WhatWeDo";
 
 export default function Home() {
   return (
@@ -16,8 +17,9 @@ export default function Home() {
       <AboutUs />
       <VideoSection />
       {/* <Stats /> */}
+      <WhatWeDo />
       <Products />
-      <Clients />
+      {/* <Clients /> */}
       <Certifications />
       <ContactUsSection />
     </div>

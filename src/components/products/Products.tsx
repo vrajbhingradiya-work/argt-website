@@ -9,6 +9,8 @@ import image6 from "@/public/products/06.jpeg";
 import image7 from "@/public/products/07.jpeg";
 import image8 from "@/public/products/08.jpg";
 import image9 from "@/public/products/09.jpeg";
+import riceImage from "@/public/products/rice.jpeg";
+import coconutImage from "@/public/products/coconut.jpeg";
 import SlideInFromBottom from "../animations/SlideInFromBottom";
 
 function Products() {
@@ -16,6 +18,14 @@ function Products() {
     {
       title: "Cotton",
       imgSrc: image1,
+    },
+    {
+      title: "Rice",
+      imgSrc: riceImage,
+    },
+    {
+      title: "Coconut",
+      imgSrc: coconutImage,
     },
     {
       title: "Peanut",
@@ -57,7 +67,7 @@ function Products() {
     >
       <div className="w-full xl:max-w-[1050px] overflow-hidden flex flex-col gap-8 py-12 items-center justify-center">
         <p className="text-center font-medium text-dark-blue text-3xl md:text-6xl pb-12 ">
-          {"PRODUCTS THAT WE IMPORT & EXPORT"}
+          {"PRODUCTS THAT WE EXPORT"}
         </p>
         <div className="w-full grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {productsList.map((product: any, index: any) => {

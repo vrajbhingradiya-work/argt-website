@@ -217,6 +217,14 @@ function FooterLinks() {
                   Call Us +91 97047 69851
                 </Link>
               </li>
+              <li className="mb-2 md:mb-6">
+                <Link
+                  href="mailto:info@alroshangroups.com"
+                  className="text-gray-600 whitespace-nowrap hover:text-gray-900 hover:underline"
+                >
+                  Mail Us: info@alroshangroups.com
+                </Link>
+              </li>
             </ul>
           </div>
           <div className="lg:mx-auto text-left ">

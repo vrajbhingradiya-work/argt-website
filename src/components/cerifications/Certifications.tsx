@@ -6,6 +6,14 @@ import certification3 from "@/public/certificates/03.jpeg";
 import certification4 from "@/public/certificates/04.png";
 import certification5 from "@/public/certificates/05.jpeg";
 import certification6 from "@/public/certificates/06.jpeg";
+import certification7 from "@/public/clients-logos/client1.jpg";
+import certification8 from "@/public/clients-logos/client2.jpg";
+import certification9 from "@/public/clients-logos/client3.png";
+import certification10 from "@/public/clients-logos/client4.png";
+import certification11 from "@/public/clients-logos/client5.png";
+import certification12 from "@/public/clients-logos/client6.jpg";
+import certification13 from "@/public/clients-logos/client7.png";
+import certification14 from "@/public/clients-logos/client8.png";
 import Image from "next/image";
 
 function Certifications() {
@@ -66,6 +74,38 @@ function CertificationLogos() {
     {
       title: "EXPORT",
       imgSrc: certification6,
+    },
+    {
+      title: "SUPPLY CHAIN MANAGEMENT",
+      imgSrc: certification7,
+    },
+    {
+      title: "IMPORT",
+      imgSrc: certification8,
+    },
+    {
+      title: "EXPORT",
+      imgSrc: certification9,
+    },
+    {
+      title: "SUPPLY CHAIN MANAGEMENT",
+      imgSrc: certification10,
+    },
+    {
+      title: "IMPORT",
+      imgSrc: certification11,
+    },
+    {
+      title: "EXPORT",
+      imgSrc: certification12,
+    },
+    {
+      title: "IMPORT",
+      imgSrc: certification13,
+    },
+    {
+      title: "EXPORT",
+      imgSrc: certification14,
     },
   ];
   return (
