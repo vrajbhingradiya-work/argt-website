@@ -219,10 +219,10 @@ function FooterLinks() {
               </li>
               <li className="mb-2 md:mb-6">
                 <Link
-                  href="mailto:info@alroshangroups.com"
+                  href="mailto:alroshanglobaltraders@gmail.com"
                   className="text-gray-600 whitespace-nowrap hover:text-gray-900 hover:underline"
                 >
-                  Mail Us: info@alroshangroups.com
+                  Mail Us: alroshanglobaltraders@gmail.com
                 </Link>
               </li>
             </ul>
