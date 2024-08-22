@@ -10,8 +10,8 @@ export async function POST(request: Request, response: Response) {
       await request.json();
 
     const { data, error } = await resend.emails.send({
-      from: "info@alroshangroups.com",
-      to: ["alroshanglobaltraders@gmail.com"],
+      from: "information@alroshangroups.com",
+      to: ["info@alroshangroups.com"],
       // to: ["lll.rg3.lll@gmail.com"],
       subject: `Inquiry Raised by ${clientName}`,
       react: EmailTemplate({
